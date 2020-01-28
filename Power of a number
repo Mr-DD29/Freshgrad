@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.lang.Math;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner get = new Scanner(System.in);
+      	int X = get.nextInt();
+      	int N = get.nextInt();
+      	double power = Math.pow(X,N);
+      	System.out.println(power);
+    }
+}
