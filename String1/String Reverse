@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner vicky = new Scanner(System.in);
+      	String a = vicky.next();
+      	StringBuilder b = new StringBuilder(a);
+      	System.out.print(b.reverse());
+	}
+}
