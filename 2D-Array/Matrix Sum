@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner get = new Scanner(System.in);
+      	int a = get.nextInt();
+      	int b = get.nextInt();
+      	int[][] mat = new int[a][b];
+      	int total = 0;
+      	for(int i = 0; i < a; i++)
+        {
+        	for(int j = 0; j < b; j++)
+            {
+            	mat[i][j] = get.nextInt();
+              	total = total + mat[i][j];
+            }
+        }
+      	System.out.print(total);
+	}
+}
