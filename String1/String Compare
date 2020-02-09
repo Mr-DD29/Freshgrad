@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner vicky = new Scanner(System.in);
+      	String a = vicky.next();
+      	String b = vicky.next();
+      	if(b.compareTo(a)==0)
+          System.out.print("Strings are same");
+      	else
+          System.out.print("Strings are not same");
+	}
+}
