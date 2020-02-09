@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner get = new Scanner(System.in);
+      	int x = get.nextInt();
+      	int a = get.nextInt();
+      	int b = get.nextInt();
+      	int profit = x - 100;
+      	System.out.print("The profit obtained is Rs."+profit);
+	}
+}
