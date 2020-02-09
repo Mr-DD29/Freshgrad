@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner vicky = new Scanner(System.in);
+      	String a = vicky.next();
+      	int count = 0;
+      	int b = a.length();
+      	for(int i =b - 1; i > 0; i--)
+        {
+          	char v = a.charAt(i);
+        	if(v == 'a'|| v == 'e'|| v == 'i'||v == 'o'||v == 'u')
+              count++;
+        }
+      System.out.print(count);
+	}
+}
