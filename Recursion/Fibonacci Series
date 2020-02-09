@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main
+{
+    static int num1 = 0, num2 = 1, sum = 0;
+  	static int fib(int a)
+    {
+    	if(a == 1)
+          return num1;
+      	else
+          sum = num1 + num2;
+      	  num1 = num2;
+      	  num2 = sum;
+      	  return fib(a - 1);
+    }
+    public static void main(String args[])
+    {
+        Scanner vicky = new Scanner(System.in);
+      	int n = vicky.nextInt();
+      	System.out.print("The term "+n+" in the fibonacci series is "+fib(n));
+    }
+}
