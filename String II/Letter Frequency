@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner vicky = new Scanner(System.in);
+      	String a = vicky.next();
+      	for(char i = 'A'; i <= 'z'; i++)
+        {
+            int count = 0;
+        	for(int j = 0; j < a.length(); j++)
+            {
+            	char b = a.charAt(j);
+              	if(i == b)
+                  count++;
+            }
+          if(count > 0)
+          	System.out.println(i+""+count);
+        }
+    }
+}
