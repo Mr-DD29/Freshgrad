@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner get = new Scanner(System.in);
+    int x1 = get.nextInt();
+    int y1 = get.nextInt();
+    int x2 = get.nextInt();
+    int y2 = get.nextInt();
+    float sum_of_x = x1 + x2;
+    float sum_of_y = y1 + y2;
+    float x3 = sum_of_x / 2;
+    float y3 = sum_of_y / 2;
+    System.out.printf("Binoy's house is located at ("+x3+","+y3+")");
+  }
+}
