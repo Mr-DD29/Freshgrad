@@ -1,0 +1,55 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner vicky = new Scanner(System.in);
+      	int n = vicky.nextInt();
+      	int[][] magic = new int[n][n];
+      	for(int i = 0; i < n; i++)
+        {
+        	for(int j = 0; j < n; j++)
+            {
+            	magic[i][j] = vicky.nextInt();
+            }
+        }
+      	int[] a = new int[n];
+      	for(int i = 0; i < n; i++)
+        {
+          	int add = 0;
+        	for(int j = 0; j < n; j++)
+            {
+            	a[i]= add + magic[i][j];
+                add = a[i];
+            }
+        }
+          int[] b= new int[n];
+      	for(int i = 0; i < n; i++)
+        {
+          	int add = 0;
+        	for(int j = 0; j < n; j++)
+            {
+            	b[i]= add + magic[j][i];
+                add = b[i];
+            }
+        }
+        int sum = 0, sum1 = 0;
+        for(int i = 0; i < n; i++)
+        {
+          	sum += magic[i][i];
+            sum1 += magic[i][n -1 -i];
+        }
+        int z = 0;
+        for(int i = 0; i < a.length; i++)
+                                  {
+                                  	if(a[i] == b[i])
+                                      z = a[0];
+                                    else
+                                      z = b[0];
+                                  }
+      if(z == sum && z == sum1)
+                                      System.out.println("yes");
+                                    else
+                                      System.out.println("no");
+	}
+}
