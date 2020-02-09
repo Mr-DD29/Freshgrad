@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner don = new Scanner(System.in);
+      	String name = don.next();
+      	System.out.println(name);
+    }
+}
