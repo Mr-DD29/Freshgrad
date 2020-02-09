@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner vicky = new Scanner(System.in);
+      	int n = vicky.nextInt();
+      	int[][] mat = new int[n][n];
+      	for(int i = 0; i < n; i++)
+        {
+        	for(int j = 0; j < n; j++)
+            {
+            	mat[i][j] = vicky.nextInt();
+            }
+        }
+      	int sum = 0;
+      	for(int i = 0; i < n; i++)
+        {
+        	for(int j = 0; j < n; j++)
+            {
+            	if(i != j && i > j)
+                	sum = sum + mat[i][j];
+            }
+        }
+      if(sum == 0)
+        System.out.print("yes");
+      else
+        System.out.print("no");
+	}
+}
