@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner get = new Scanner(System.in);
+      	int a = get.nextInt();
+      	int b = get.nextInt();
+      	int max = 0;
+      	int[][] mat = new int[a][b];
+      max = mat[0][0];
+      	for(int i = 0; i < a; i++)
+        {
+        	for(int j = 0; j < b; j++)
+            {
+            	mat[i][j] = get.nextInt();
+              	
+              	if(max < mat[i][j])
+                {
+                	max = mat[i][j];
+                }
+            }
+        }
+      	System.out.print(max);
+	}
+}
