@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner get = new Scanner(System.in);
+      	int a = get.nextInt();
+      	//String b = "Even";
+      	//String d = "Odd";
+      	String c = (a%2==0) ? "Even" : "Odd";
+      	System.out.println(c);
+    }
+}
