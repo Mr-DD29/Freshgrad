@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner get = new Scanner(System.in);
+      	String student_type = get.nextLine();
+      	int tuition_fee = get.nextInt();
+      	int bus_fee = get.nextInt();
+      	int hostel_fee = get.nextInt();
+      	int msds = tuition_fee + bus_fee;
+      	int msh = tuition_fee + hostel_fee;
+      	int percent_value = tuition_fee * 150/100;
+      	int mgsds = percent_value + bus_fee;
+      	int mgsh = percent_value + hostel_fee;
+      	if(student_type.equals("MSH"))
+        {
+        	System.out.print(msh);
+        }
+      	else if(student_type.equals("MSDS"))
+        {
+        	System.out.print(msds);
+        }
+      	else if(student_type.equals("MGSDS"))
+        {
+        	System.out.print(mgsds);
+        }        
+      	else if(student_type.equals("MGSH"))
+        {
+        	System.out.print(mgsh);
+        }
+      	else
+        {
+        	System.out.print("Invalid");
+        }
+    }
+}
